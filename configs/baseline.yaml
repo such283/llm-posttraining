@@ -1,0 +1,8 @@
+model_id: Qwen/Qwen2.5-7B
+seed: 42
+output_dir: results/baseline
+prompt: "Explain binary search to a beginner in three sentences."
+max_new_tokens: 128
+conditions:
+  - raw
+  - chat

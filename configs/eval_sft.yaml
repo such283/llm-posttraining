@@ -1,0 +1,14 @@
+# Fair format-controlled comparison of Base and the trained SFT adapter.
+# --limit 10 may be used for a pipeline smoke test, but never as final results.
+model_id: Qwen/Qwen2.5-7B
+adapter_dir: outputs/sft_full/adapter
+output_dir: results/eval_sft
+seed: 42
+batch_size: 4
+tasks:
+  - ifeval
+# For the full regression suite, also add:
+#  - arc_challenge
+#  - mmlu
+#  - wikitext
+# WikiText is run untemplated only, as a continuous-text perplexity task.

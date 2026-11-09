@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: llm-posttraining-study
+Version: 0.1.0
+Summary: Reproducible LLM post-training and inference optimization experiments
+Requires-Python: >=3.10

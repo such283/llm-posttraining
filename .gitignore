@@ -1,0 +1,51 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Downloaded models and caches
+.cache/
+.huggingface/
+hf_cache/
+huggingface_cache/
+models/
+checkpoints/
+
+# Training checkpoints
+outputs/
+artifacts/
+wandb/
+runs/
+
+# Model weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+
+# Large raw evaluation outputs
+results/raw/
+results/logs/
+results/eval_sft/smoke_summary.json
+
+# Logs and backups
+*.log
+*.tar.gz
+*.zip
+*.tmp
+
+# Editor files
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store

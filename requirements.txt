@@ -1,0 +1,18 @@
+
+# SFT and DPO training
+transformers>=4.50,<6
+accelerate>=1.4,<2
+peft>=0.17,<1
+trl>=1.0,<2
+datasets>=3.5,<5
+bitsandbytes>=0.45,<1
+sentencepiece>=0.2,<1
+safetensors>=0.5,<1
+PyYAML>=6,<7
+
+# Hugging Face evaluation + IFEval
+# Includes langdetect, immutabledict, nltk
+lm_eval[hf,ifeval]
+
+# Testing
+pytest>=8,<10
