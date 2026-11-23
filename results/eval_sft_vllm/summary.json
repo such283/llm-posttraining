@@ -1,0 +1,66 @@
+{
+  "adapter_dir": "outputs/sft_full/adapter",
+  "conditions": {
+    "base:chat": {
+      "ifeval": {
+        "inst_level_loose_acc,none": 0.5635491606714629,
+        "inst_level_strict_acc,none": 0.48201438848920863,
+        "prompt_level_loose_acc,none": 0.46210720887245843,
+        "prompt_level_loose_acc_stderr,none": 0.021454695436204742,
+        "prompt_level_strict_acc,none": 0.3752310536044362,
+        "prompt_level_strict_acc_stderr,none": 0.02083589806503567
+      }
+    },
+    "base:raw": {
+      "ifeval": {
+        "inst_level_loose_acc,none": 0.42685851318944845,
+        "inst_level_strict_acc,none": 0.3980815347721823,
+        "prompt_level_loose_acc,none": 0.3234750462107209,
+        "prompt_level_loose_acc_stderr,none": 0.020131003392118964,
+        "prompt_level_strict_acc,none": 0.2902033271719039,
+        "prompt_level_strict_acc_stderr,none": 0.019530856691222623
+      }
+    },
+    "sft:chat": {
+      "ifeval": {
+        "inst_level_loose_acc,none": 0.4712230215827338,
+        "inst_level_strict_acc,none": 0.44004796163069543,
+        "prompt_level_loose_acc,none": 0.34011090573012936,
+        "prompt_level_loose_acc_stderr,none": 0.020386791181835815,
+        "prompt_level_strict_acc,none": 0.30868761552680224,
+        "prompt_level_strict_acc_stderr,none": 0.019879245251116444
+      }
+    },
+    "sft:raw": {
+      "ifeval": {
+        "inst_level_loose_acc,none": 0.434052757793765,
+        "inst_level_strict_acc,none": 0.4064748201438849,
+        "prompt_level_loose_acc,none": 0.3179297597042514,
+        "prompt_level_loose_acc_stderr,none": 0.02003933297102034,
+        "prompt_level_strict_acc,none": 0.2920517560073937,
+        "prompt_level_strict_acc_stderr,none": 0.019567429846009485
+      }
+    }
+  },
+  "configuration": {
+    "adapter_dir": "outputs/sft_full/adapter",
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_memory_utilization": 0.8,
+    "max_lora_rank": 16,
+    "max_model_len": 4096,
+    "max_num_seqs": 16,
+    "model_id": "Qwen/Qwen2.5-7B",
+    "output_dir": "results/eval_sft_vllm",
+    "seed": 42,
+    "tasks": [
+      "ifeval"
+    ]
+  },
+  "engine": "vllm",
+  "limit": null,
+  "model_id": "Qwen/Qwen2.5-7B",
+  "note": "IFEval quality metrics, not GPU throughput or TTFT/TPOT metrics",
+  "provisional": false,
+  "seed": 42
+}
