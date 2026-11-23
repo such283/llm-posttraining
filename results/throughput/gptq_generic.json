@@ -1,0 +1,8 @@
+{
+    "model_id": "/root/llm-posttraining/outputs/quantized/gptq_generic",
+    "elapsed_time": 3.8499428819632158,
+    "num_requests": 64,
+    "total_num_tokens": 24576,
+    "requests_per_second": 16.62362324901928,
+    "tokens_per_second": 6383.471327623403
+}

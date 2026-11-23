@@ -1,0 +1,8 @@
+{
+    "model_id": "/root/llm-posttraining/outputs/dpo_merged",
+    "elapsed_time": 6.392302726977505,
+    "num_requests": 64,
+    "total_num_tokens": 24576,
+    "requests_per_second": 10.012041471362128,
+    "tokens_per_second": 3844.623925003057
+}

@@ -1,0 +1,8 @@
+{
+    "model_id": "/root/llm-posttraining/outputs/quantized/awq_generic",
+    "elapsed_time": 3.8543153039645404,
+    "num_requests": 64,
+    "total_num_tokens": 24576,
+    "requests_per_second": 16.604765036780915,
+    "tokens_per_second": 6376.229774123871
+}
