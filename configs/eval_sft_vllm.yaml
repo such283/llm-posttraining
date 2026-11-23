@@ -1,0 +1,14 @@
+# IFEval Base versus SFT comparison using the lm-eval vLLM backend.
+# This is a quality evaluation, not a TTFT/TPOT performance benchmark.
+model_id: Qwen/Qwen2.5-7B
+adapter_dir: outputs/sft_full/adapter
+output_dir: results/eval_sft_vllm
+seed: 42
+tasks:
+  - ifeval
+batch_size: auto
+max_model_len: 4096
+max_num_seqs: 16
+gpu_memory_utilization: 0.80
+max_lora_rank: 16
+dtype: bfloat16
